@@ -1,0 +1,27 @@
+<html>
+	<head>
+	
+	</head>
+	<body>
+	
+	</body>
+	<script>
+		setInterval(() => {
+			const number = Math.floor(Math.random() * 3)
+			console.log(number)
+			const color = number === 0 ? 'red' : number === 1 ? 'blue' : 'green'
+			document.querySelector("body").setAttribute("class", color)
+		},3000)
+	</script>
+	<style>
+		.blue {
+			background-color : blue
+		}
+		.red {
+			background-color : red
+		}
+		.green {
+			background-color : green
+		}
+	</style>
+</html>
